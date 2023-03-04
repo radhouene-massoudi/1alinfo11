@@ -1,0 +1,38 @@
+<p>nav works!</p>
+<!--interpolation-->
+{{test}}
+<!--prpoerty binding-->
+<div [style.backgroundColor]="kolor">this is my color</div>
+<!--two way databinding-->
+<input type="text" [(ngModel)]="kolor">
+<br>
+<input type="text" #t (change)="twoway(t.value)">
+<!--event binding-->
+<input type="submit" value="change color" (click)="changeColor()">
+<!--ngfor-->
+<div *ngFor="let p of listProdcut">
+    <div *ngIf="p.quantity!=0"> 
+{{p.id}}
+{{p.title}}
+{{p.price}}
+{{p.quantity}}
+{{p.like}}
+
+</div>
+</div>
+<hr>
+<div *ngFor="let p of listProdcut">
+{{p.id}}
+{{p.title}}
+{{p.price}}
+{{p.quantity}}
+{{p.like}}
+<input type="submit" value="buy" [disabled]="p.quantity==0">
+<!--
+<div *ngIf="p.quantity==0">
+<input type="submit" value="buy" disabled>
+</div>
+<div *ngIf="p.quantity!=0">
+    <input type="submit" value="buy" >
+    </div>-->
+</div>
