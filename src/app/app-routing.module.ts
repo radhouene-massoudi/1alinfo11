@@ -1,14 +1,13 @@
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NavComponent } from './nav/nav.component';
-import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
-import { AddproductComponent } from './addproduct/addproduct.component';
+import { NotfoundComponent } from './sahred/header/notfound/notfound.component';
+import { AddproduitComponent } from './Core/manage Product/addproduit/addproduit.component';
 
-import { NotfoundComponent } from './notfound/notfound.component';
 const r: Routes = [
+  {path:'',redirectTo:'login',pathMatch:'full'},
   {path:'login',component:LoginComponent},
-  {path:'addProduct',component:AddproductComponent},
+  {path:'addProduct',component:AddproduitComponent},
   {path:'**',component:NotfoundComponent},
   
 ];
