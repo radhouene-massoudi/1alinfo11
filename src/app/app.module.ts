@@ -11,7 +11,9 @@ import { HeaderComponent } from './sahred/header/header.component';
 import { NotfoundComponent } from './sahred/header/notfound/notfound.component';
 import { AddproduitComponent } from './Core/manage Product/addproduit/addproduit.component';
 import { UpdateproduitComponent } from './Core/manage Product/updateproduit/updateproduit.component';
-
+import { DetailproductComponent } from './Core/manage Product/detailproduct/detailproduct.component';
+import { FetchProductsComponent } from './Core/manage Product/fetch-products/fetch-products.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,12 +24,15 @@ import { UpdateproduitComponent } from './Core/manage Product/updateproduit/upda
     HeaderComponent,
     NotfoundComponent,
     AddproduitComponent,
-    UpdateproduitComponent
+    UpdateproduitComponent,
+    DetailproductComponent,
+    FetchProductsComponent
   ],
   imports: [
    BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

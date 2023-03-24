@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "nom": "dkjfsdjf",
+      "des": "9999",
+      "price": 4,
+      "id": 1
+    },
+    {
+      "nom": "1alinfo11",
+      "des": "9999",
+      "price": 4,
+      "id": 2
+    }
+  ]
+}

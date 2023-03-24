@@ -1,0 +1,7 @@
+<p>fetch-products works!</p>
+<div *ngFor="let p of listProdcut">
+{{p.id}}
+{{p.title}}
+{{p.quantity}}
+<a [routerLink]="['/detail/',p.id]">detail </a>
+</div>
