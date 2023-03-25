@@ -1,7 +1,10 @@
 <p>fetch-products works!</p>
 <div *ngFor="let p of listProdcut">
 {{p.id}}
-{{p.title}}
-{{p.quantity}}
+{{p.des}}
+{{p.nom}}
+{{p.price}}
 <a [routerLink]="['/detail/',p.id]">detail </a>
+<a [routerLink]="['/remove/',p.id]">delete </a>
+<a [routerLink]="['/update/',p.id]">update </a>
 </div>

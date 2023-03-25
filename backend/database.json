@@ -1,16 +1,16 @@
 {
   "products": [
     {
-      "nom": "dkjfsdjf",
+      "nom": "test",
       "des": "9999",
       "price": 4,
       "id": 1
     },
     {
-      "nom": "1alinfo11",
-      "des": "9999",
-      "price": 4,
-      "id": 2
+      "nom": "1Alinfo12",
+      "des": "777",
+      "price": 300,
+      "id": 3
     }
   ]
 }

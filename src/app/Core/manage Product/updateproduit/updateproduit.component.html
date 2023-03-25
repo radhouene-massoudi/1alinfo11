@@ -1,1 +1,20 @@
-<p>updateproduit works!</p>
+<form #f="ngForm">
+    <label>name</label>
+    <input type="text" name='nom' ngModel required minlength="3" #t="ngModel" [(ngModel)]="product.nom">
+    <div *ngIf="t.invalid && t.touched">
+        <div *ngIf="t.errors?.['required']">
+            required
+        </div>
+        <div *ngIf="t.errors?.['minlength']">
+            minlength
+        </div>
+    </div>
+    <label>description</label>
+    <input type="text" name='des' ngModel pattern="[0-9]*" #test="ngModel" [(ngModel)]="product.des">
+    <div *ngIf="test.invalid">
+number
+    </div>
+    <label>price</label>
+    <input type="number" name='price' ngModel [(ngModel)]="product.price">
+    <input type="submit" value="save" (click)="saveProduct(f.value)" [disabled]="f.invalid">
+</form>

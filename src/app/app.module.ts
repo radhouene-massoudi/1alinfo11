@@ -14,6 +14,7 @@ import { UpdateproduitComponent } from './Core/manage Product/updateproduit/upda
 import { DetailproductComponent } from './Core/manage Product/detailproduct/detailproduct.component';
 import { FetchProductsComponent } from './Core/manage Product/fetch-products/fetch-products.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RemoveproductComponent } from './Core/manage Product/removeproduct/removeproduct.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     AddproduitComponent,
     UpdateproduitComponent,
     DetailproductComponent,
-    FetchProductsComponent
+    FetchProductsComponent,
+    RemoveproductComponent
   ],
   imports: [
    BrowserModule,
